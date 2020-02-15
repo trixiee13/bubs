@@ -1,3 +1,3 @@
 # bubs
 
-# well hello there whaaaat
+# well hello there
