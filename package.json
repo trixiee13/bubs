@@ -1,0 +1,21 @@
+{
+  "name": "bubu-the-guide",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.8.3",
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "http-server": "^0.12.1",
+    "pug": "^2.0.4",
+    "pug-cli": "^1.0.0-alpha6"
+  },
+  "scripts": {
+    "build-js": "babel src/scripts -d dist/scripts",
+    "build-scss": "sass src/styles/:dist/styles",
+    "watch-scss": "sass --watch src/styles/:dist/styles",
+    "watch-pug": "pug -w ./src -o ./dist -P",
+    "dev": "sass --watch src/styles/:dist/styles & pug -w ./src -o ./dist -P"
+  }
+}

@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "Abys";
+  src: url("../../assets/fonts/Abys-Regular.otf") format("opentype");
+  font-style: normal;
+  font-display: swap;
+}
+main {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+main .section_1,
+main .section_2 {
+  position: absolute;
+  top: 100px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transition: all 1s ease;
+}
+main .section_1:hover,
+main .section_2:hover {
+  opacity: 1;
+}
+
+.section_1 {
+  background: #ffde59;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.8;
+  top: 300px;
+  clip-path: polygon(20% 23%, 20% 23%, 45% 100%, 0% 100%);
+}
+.section_1:hover {
+  clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.section_2 {
+  background: #006253;
+  width: 100vw;
+  height: 100vh;
+  clip-path: polygon(40% 0, 40% 0, 60% 100%, 25% 100%);
+}
+.section_2:hover {
+  clip-path: polygon(40% 0, 100% 0%, 100% 100%, 25% 100%);
+}
+
+.text {
+  font-family: "Abys", sans-serif;
+}
+
+/*# sourceMappingURL=homepage.css.map */
