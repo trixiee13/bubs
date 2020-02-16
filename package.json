@@ -16,6 +16,7 @@
     "build-scss": "sass src/styles/:dist/styles",
     "watch-scss": "sass --watch src/styles/:dist/styles",
     "watch-pug": "pug -w ./src -o ./dist -P",
-    "dev": "sass --watch src/styles/:dist/styles & pug -w ./src -o ./dist -P"
+    "serve-dist": "http-server dist",
+    "dev": "sass --watch src/styles/:dist/styles & pug -w ./src -o ./dist -P & http-server dist"
   }
 }
