@@ -7,6 +7,8 @@
     "@babel/cli": "^7.8.3",
     "@babel/core": "^7.8.3",
     "@babel/preset-env": "^7.8.3",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1",
     "http-server": "^0.12.1",
     "pug": "^2.0.4",
     "pug-cli": "^1.0.0-alpha6"
@@ -17,6 +19,12 @@
     "watch-scss": "sass --watch src/styles/:dist/styles",
     "watch-pug": "pug -w ./src -o ./dist -P",
     "serve-dist": "http-server dist",
-    "dev": "sass --watch src/styles/:dist/styles & pug -w ./src -o ./dist -P & http-server dist"
+    "watch-assets": "cpx 'src/assets/**/*' dist/assets --watch",
+    "lint": "eslint ./src  --ext .js",
+    "dev": "sass --watch src/styles/:dist/styles & pug -w ./src -o ./dist -P & babel src/scripts -d dist/scripts & cpx 'src/assets/**/*' dist/assets --watch & http-server dist"
+  },
+  "devDependencies": {
+    "cpx": "^1.5.0",
+    "eslint": "^5.16.0"
   }
 }

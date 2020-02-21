@@ -1,5 +1,4 @@
 class BubsNavbar extends HTMLElement {
-
   constructor() {
     super();
   }
@@ -9,7 +8,7 @@ class BubsNavbar extends HTMLElement {
   }
 
   initShadowDom() {
-    let shadowRoot = this.attachShadow({mode: 'open'});
+    const shadowRoot = this.attachShadow({ mode: 'open' });
     shadowRoot.innerHTML = this.template;
   }
 
@@ -18,7 +17,7 @@ class BubsNavbar extends HTMLElement {
       <style>
 
        @include '../dist/styles/reset.css';
-    
+
        @keyframes change-color {
          0% {
            background: #006253;

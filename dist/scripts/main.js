@@ -5,10 +5,8 @@ function dsfsdfs() {
   console.log('format');
 }
 
-
 const dostuff = () => {
   console.log('scroll');
 };
-
 
 window.addEventListener('scroll', dostuff);

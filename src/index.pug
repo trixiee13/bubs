@@ -1,3 +1,63 @@
-include templates/menu.pug
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
 
-p hello
+    title Bubu the guide
+    meta(name="description" content="This is Bubu's website")
+    meta(name="author" content="Betty")
+
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet")
+
+    link(rel="stylesheet" href="styles/reset.css")
+    link(rel="stylesheet" href="styles/homepage.css")
+
+  body
+    header
+      nav
+        ul
+          li about me
+          li winter activities
+          li summer activities
+
+    main
+      .intro next adventure?
+      .hi  hi, i'm bubu and i'm a mountain guide
+      .see-all
+        .see-all-text
+          span Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel neque elit. Proin vitae nibh leo.
+          button.type-2 see all adventures
+
+      .mountain_1
+        .text
+          h1 alpine climbing
+          button.type-2 see more
+      .mountain_2
+        .text
+          h2 trekking
+          button.type-2 see more
+      .mountain_3
+        .text
+          h3 rock climbing
+          button.type-2 see more
+
+      button.main-cta.type-2 ask me anything
+
+
+      .social
+        .socialbtns
+          ul
+            li
+              a(href="#" class="fa fa-lg fa-facebook")
+            li
+              a(href="#" class="fa fa-lg fa-instagram")
+
+    footer
+
+    script(src="scripts/main.js")
+
+
+
+
+
